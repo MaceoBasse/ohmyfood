@@ -1,0 +1,192 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+// color
+$primary: #9356dc;
+$secondary: #ff79da;
+$tertiary: #99e2d0;
+$shadow: #d0d0d0;
+$white: #fff;
+$black: #000;
+$primary_light: #f5edff;
+$light_gray: #f6f6f6;
+$gray: #eaeaea;
+$dark_gray: #353535;
+$green: #008000;
+$light_green: #90ee90;
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.gradient {
+  background: linear-gradient(180deg, $secondary 0%, $primary 100%);
+}
+a {
+  text-decoration: none;
+  color: $black;
+}
+
+.logo_ohmyfood {
+  text-align: center;
+  margin: 20px;
+}
+.logo_width {
+  width: 60%;
+  max-width: 300px;
+}
+.city_banner {
+  @extend .center;
+  background-color: $gray;
+  box-shadow: inset 0px 4px 5px $shadow;
+}
+.city_texte {
+  font-weight: bold;
+}
+.fa-map-marker-alt {
+  margin-right: 20px;
+}
+.reservation {
+  background-color: $light_gray;
+  padding-bottom: 40px;
+}
+.reservation_texte {
+  @extend .center;
+  padding: 30px 80px 0 80px;
+  margin: 0;
+}
+.info_texte {
+  @extend .center;
+  padding: 0 20px 10px;
+}
+.button {
+  @include btn;
+}
+.button_texte {
+  @extend .center;
+  color: $white;
+}
+.texte_fonctionnement {
+  margin: 30px 20px;
+  font-weight: bold;
+}
+.fa-mobile-alt,
+.fa-list-ul,
+.fa-store {
+  color: $dark_gray;
+}
+.cards_fonctionnement {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.card_fonctionnement {
+  @extend .center;
+  justify-content: flex-start;
+  height: 70px;
+  background-color: $light_gray;
+  width: 300px;
+  margin: 25px 10px;
+  border-radius: 20px;
+  box-shadow: 0px 4px 5px $shadow;
+
+  &:hover {
+    background: $primary_light;
+  }
+  &:hover .fa-mobile-alt,
+  &:hover .fa-list-ul,
+  &:hover .fa-store {
+    color: $primary;
+  }
+}
+
+.fonctionnement_titre {
+  font-weight: bolder;
+  margin-left: 25px;
+}
+.number {
+  @extend .center;
+  margin-right: 25px;
+  background-color: $primary;
+  height: 25px;
+  width: 25px;
+  color: $white;
+  border-radius: 50%;
+  position: relative;
+  left: -10px;
+}
+.restaurants_titre {
+  font-weight: bolder;
+}
+#restaurants {
+  background-color: $light_gray;
+  padding: 20px;
+}
+.restaurants_name {
+  font-weight: bold;
+}
+.cards_restaurants {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.card_restaurants {
+  border-radius: 15px;
+  height: 250px;
+  width: 100%;
+  max-width: 500px;
+  box-shadow: 0px 4px 5px $shadow;
+  margin-bottom: 20px;
+  margin-right: 20px;
+  position: relative;
+
+  &:hover {
+    transform: scale(1.07);
+  }
+}
+.card_info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 15px;
+}
+.restaurants_name {
+  margin-bottom: 0;
+}
+.restaurants_location {
+  margin-top: 5px;
+}
+.img_restaurants {
+  width: auto;
+  height: 170px;
+}
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 15px 15px 0 0;
+}
+.fa-heart {
+  @include heart;
+}
+.new {
+  background-color: $light_green;
+  height: 30px;
+  width: 90px;
+  position: absolute;
+  bottom: 200px;
+  right: 20px;
+  border-radius: 5px;
+}
+.new_text {
+  @extend .center;
+  margin: 5px;
+  color: $green;
+}

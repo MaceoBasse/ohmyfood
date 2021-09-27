@@ -1,0 +1,15 @@
+// responsive
+@media (min-width: 500px) {
+  .fonctionnement_titre,
+  .restaurants_titre {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+}
+@media screen and (min-width: 900px) {
+  .menu_block {
+    min-width: 30%;
+  }
+}

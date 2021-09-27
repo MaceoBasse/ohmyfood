@@ -1,0 +1,32 @@
+@mixin btn {
+  @extend .center;
+  @extend .gradient;
+  border-radius: 30px;
+  height: 50px;
+  width: 230px;
+  margin: 0 auto;
+  box-shadow: 0px 4px 5px $shadow;
+
+  &:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 6px 3px $shadow;
+  }
+}
+@mixin heart {
+  font-size: 1.7em;
+  &:hover {
+    font-weight: 900;
+    transition: all 800ms ease-in;
+    background: -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      from($secondary),
+      to($primary)
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: initial;
+  }
+  
+}

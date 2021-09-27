@@ -1,0 +1,29 @@
+footer {
+  display: flex;
+  flex-direction: column;
+  background-color: $dark_gray;
+  color: $white;
+  padding: 30px;
+}
+.footer_link {
+  color: $white;
+}
+.footer_logo {
+  filter: brightness(0) invert(1);
+  width: 130px;
+  margin-bottom: 10px;
+}
+.footer_box {
+  display: flex;
+  align-items: center;
+}
+.fa-utensils,
+.fa-hands-helping {
+  margin-right: 10px;
+}
+.footer_margin {
+  margin: 7px 0;
+}
+.scale:hover{
+  transform: scale(1.03);
+}
