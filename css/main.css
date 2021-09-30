@@ -368,12 +368,14 @@ img {
 
 .fa-heart {
   font-size: 1.7em;
+  -webkit-transition: all 1s ease-in;
+  transition: all 1s ease-in;
 }
 
 .fa-heart:hover {
+  -webkit-animation: fade 1s ease-in;
+          animation: fade 1s ease-in;
   font-weight: 900;
-  -webkit-transition: all 800ms ease-in;
-  transition: all 800ms ease-in;
   background: -webkit-gradient(linear, left top, left bottom, from(#ff79da), to(#9356dc));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
