@@ -53,9 +53,9 @@
   margin: 1rem 1rem 0 0;
 }
 .menu_block {
-  min-width: 100%;
   flex: 1;
   margin: 8px 16px;
+  width: 300px;
 }
 
 .menu_titre {
@@ -115,7 +115,7 @@
   // transition: all 500ms ease-in-out;
 }
 .order_button {
-  min-width: 100%;
+  min-width: 100%; 
 }
 
 .hidden {

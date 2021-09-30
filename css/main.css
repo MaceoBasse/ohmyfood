@@ -518,11 +518,11 @@ footer {
 }
 
 .menu_block {
-  min-width: 100%;
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
   margin: 8px 16px;
+  width: 300px;
 }
 
 .menu_titre {
