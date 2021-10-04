@@ -33,14 +33,11 @@ a {
   text-decoration: none;
   color: $black;
 }
-
-.logo_ohmyfood {
+.header__logo {
+  font-family: "Shrikhand";
+  margin: 5px 50px 0 0;
   text-align: center;
-  margin: 20px;
-}
-.logo_width {
-  width: 60%;
-  max-width: 300px;
+  width: 100%;
 }
 .city_banner {
   @extend .center;

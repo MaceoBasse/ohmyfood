@@ -1,148 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
-@-webkit-keyframes fade {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-@keyframes fade {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-@keyframes hidden {
-  0% {
-    opacity: 1;
-    width: 100%;
-    height: 100%;
-    z-index: 100;
-  }
-  100% {
-    opacity: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 100;
-  }
-}
-
-@-webkit-keyframes hidden {
-  0% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-    display: none;
-  }
-}
-
-@-webkit-keyframes spin {
-  0% {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
-  }
-  100% {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
-  }
-}
-
-@keyframes spin {
-  0% {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
-  }
-  100% {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
-  }
-}
-
-@-webkit-keyframes rotation {
-  0% {
-    -webkit-transform: rotate(-360deg);
-            transform: rotate(-360deg);
-  }
-  100% {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
-  }
-}
-
-@keyframes rotation {
-  0% {
-    -webkit-transform: rotate(-360deg);
-            transform: rotate(-360deg);
-  }
-  100% {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
-  }
-}
-
-@-webkit-keyframes slide {
-  0% {
-    padding: 0 20px;
-    width: auto;
-    opacity: 0;
-    -webkit-transform: translateX(250px);
-            transform: translateX(250px);
-  }
-  100% {
-    padding: 0 20px;
-    width: auto;
-    opacity: 1;
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
-  }
-}
-
-@keyframes slide {
-  0% {
-    padding: 0 20px;
-    width: auto;
-    opacity: 0;
-    -webkit-transform: translateX(250px);
-            transform: translateX(250px);
-  }
-  100% {
-    padding: 0 20px;
-    width: auto;
-    opacity: 1;
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
-  }
-}
-
-@media (min-width: 500px) {
-  .fonctionnement_titre,
-  .restaurants_titre {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    text-align: center;
-  }
-}
-
-@media screen and (min-width: 900px) {
-  .menu_block {
-    min-width: 30%;
-  }
-}
-
 body {
   margin: 0;
   padding: 0;
@@ -172,14 +29,11 @@ a {
   color: #000;
 }
 
-.logo_ohmyfood {
+.header__logo {
+  font-family: "Shrikhand";
+  margin: 5px 50px 0 0;
   text-align: center;
-  margin: 20px;
-}
-
-.logo_width {
-  width: 60%;
-  max-width: 300px;
+  width: 100%;
 }
 
 .city_banner {
@@ -368,8 +222,8 @@ img {
 
 .fa-heart {
   font-size: 1.7em;
-  -webkit-transition: all 1s ease-in;
-  transition: all 1s ease-in;
+  -webkit-transition: fill 1s ease-in;
+  transition: fill 1s ease-in;
 }
 
 .fa-heart:hover {
@@ -397,6 +251,187 @@ img {
   color: #008000;
 }
 
+@-webkit-keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes hidden {
+  0% {
+    opacity: 1;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+  }
+  100% {
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+  }
+}
+
+@-webkit-keyframes hidden {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    display: none;
+  }
+}
+
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes rotation {
+  0% {
+    -webkit-transform: rotate(-360deg);
+            transform: rotate(-360deg);
+  }
+  100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+}
+
+@keyframes rotation {
+  0% {
+    -webkit-transform: rotate(-360deg);
+            transform: rotate(-360deg);
+  }
+  100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+}
+
+@-webkit-keyframes slide {
+  0% {
+    background-color: #99e2d0;
+    padding: 0 20px;
+    width: auto;
+    opacity: 0;
+    -webkit-transform: translateX(250px);
+            transform: translateX(250px);
+  }
+  100% {
+    background-color: #99e2d0;
+    padding: 0 20px;
+    width: auto;
+    opacity: 1;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+@keyframes slide {
+  0% {
+    background-color: #99e2d0;
+    padding: 0 20px;
+    width: auto;
+    opacity: 0;
+    -webkit-transform: translateX(250px);
+            transform: translateX(250px);
+  }
+  100% {
+    background-color: #99e2d0;
+    padding: 0 20px;
+    width: auto;
+    opacity: 1;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+@-webkit-keyframes slide2 {
+  0% {
+    background-color: #99e2d0;
+    padding: 0 20px;
+    opacity: 1;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  100% {
+    background-color: #99e2d0;
+    padding: 0 20px;
+    opacity: 0;
+    -webkit-transform: translateX(250px);
+            transform: translateX(250px);
+  }
+}
+
+@keyframes slide2 {
+  0% {
+    background-color: #99e2d0;
+    padding: 0 20px;
+    opacity: 1;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  100% {
+    background-color: #99e2d0;
+    padding: 0 20px;
+    opacity: 0;
+    -webkit-transform: translateX(250px);
+            transform: translateX(250px);
+  }
+}
+
+@media (min-width: 500px) {
+  .fonctionnement_titre,
+  .restaurants_titre {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .menu_block {
+    min-width: 30%;
+  }
+}
+
 footer {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -414,11 +449,11 @@ footer {
   color: #fff;
 }
 
-.footer_logo {
-  -webkit-filter: brightness(0) invert(1);
-          filter: brightness(0) invert(1);
-  width: 130px;
-  margin-bottom: 10px;
+.footer__logo {
+  font-family: "Shrikhand";
+  color: #fff;
+  margin: 5px 50px 0 0;
+  font-size: larger;
 }
 
 .footer_box {
@@ -555,6 +590,7 @@ footer {
 .card_menu:hover .menu_check {
   -webkit-animation: slide 0.5s ease 0s 1 normal forwards;
           animation: slide 0.5s ease 0s 1 normal forwards;
+  margin-left: 20px;
 }
 
 .card_menu_text {
@@ -583,7 +619,7 @@ footer {
 .card_menu_price {
   width: 3rem;
   min-height: 100%;
-  margin: 0 2rem 0 1rem;
+  margin: 0 0rem 0 1rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -646,9 +682,12 @@ footer {
 }
 
 .menu_check {
+  opacity: 0;
   width: 0;
   padding: 0;
-  background-color: #99e2d0;
+  background-color: #fff;
+  -webkit-animation: slide2 0.5s ease 1 normal forwards;
+          animation: slide2 0.5s ease 1 normal forwards;
 }
 
 .first {

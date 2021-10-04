@@ -8,10 +8,11 @@ footer {
 .footer_link {
   color: $white;
 }
-.footer_logo {
-  filter: brightness(0) invert(1);
-  width: 130px;
-  margin-bottom: 10px;
+.footer__logo {
+  font-family: "Shrikhand";
+  color: $white;
+  margin: 5px 50px 0 0;
+  font-size: larger;
 }
 .footer_box {
   display: flex;
