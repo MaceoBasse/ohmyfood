@@ -52,11 +52,12 @@ a {
 
 .reservation {
   background-color: #f6f6f6;
-  padding-bottom: 40px;
+  padding-bottom: 50px;
 }
 
 .reservation_texte {
-  padding: 30px 80px 0 80px;
+  padding: 30px 70px 0 70px;
+  font-weight: 900;
   margin: 0;
 }
 
@@ -104,6 +105,7 @@ a {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin-bottom: 40px;
 }
 
 .card_fonctionnement {
@@ -113,10 +115,10 @@ a {
   height: 70px;
   background-color: #f6f6f6;
   width: 300px;
-  margin: 25px 10px;
+  margin: 0px 10px 20px 25px;
   border-radius: 20px;
-  -webkit-box-shadow: 0px 4px 5px #d0d0d0;
-          box-shadow: 0px 4px 5px #d0d0d0;
+  -webkit-box-shadow: 0px 5px 5px #d0d0d0;
+          box-shadow: 0px 5px 5px #d0d0d0;
 }
 
 .card_fonctionnement:hover {
@@ -131,7 +133,7 @@ a {
 
 .fonctionnement_titre {
   font-weight: bolder;
-  margin-left: 25px;
+  margin: 40px auto 20px 25px;
 }
 
 .number {
@@ -146,16 +148,17 @@ a {
 }
 
 .restaurants_titre {
-  font-weight: bolder;
+  font-weight: 900;
+  margin-top: 30px;
 }
 
 #restaurants {
   background-color: #f6f6f6;
-  padding: 20px;
+  padding: 20px 20px 50px;
 }
 
 .restaurants_name {
-  font-weight: bold;
+  font-weight: 900;
 }
 
 .cards_restaurants {
@@ -176,8 +179,7 @@ a {
   max-width: 500px;
   -webkit-box-shadow: 0px 4px 5px #d0d0d0;
           box-shadow: 0px 4px 5px #d0d0d0;
-  margin-bottom: 20px;
-  margin-right: 20px;
+  margin: 0 auto 20px;
   position: relative;
 }
 
@@ -237,22 +239,26 @@ img {
 }
 
 .new {
-  background-color: #90ee90;
+  background-color: #90e2d0;
   height: 30px;
   width: 90px;
   position: absolute;
-  bottom: 200px;
-  right: 20px;
+  bottom: 205px;
+  right: 15px;
   border-radius: 5px;
 }
 
 .new_text {
   margin: 5px;
-  color: #008000;
+  color: #008766;
+  font-weight: bold;
 }
 
 @-webkit-keyframes fade {
   0% {
+    opacity: 0;
+  }
+  30% {
     opacity: 0;
   }
   100% {
@@ -262,6 +268,9 @@ img {
 
 @keyframes fade {
   0% {
+    opacity: 0;
+  }
+  30% {
     opacity: 0;
   }
   100% {
@@ -410,75 +419,6 @@ img {
   }
 }
 
-@media (min-width: 500px) {
-  .fonctionnement_titre,
-  .restaurants_titre {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    text-align: center;
-  }
-}
-
-@media screen and (min-width: 900px) {
-  .menu_block {
-    min-width: 30%;
-  }
-}
-
-footer {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  background-color: #353535;
-  color: #fff;
-  padding: 30px;
-}
-
-.footer_link {
-  color: #fff;
-}
-
-.footer__logo {
-  font-family: "Shrikhand";
-  color: #fff;
-  margin: 5px 50px 0 0;
-  font-size: larger;
-}
-
-.footer_box {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.fa-utensils,
-.fa-hands-helping {
-  margin-right: 10px;
-}
-
-.footer_margin {
-  margin: 7px 0;
-}
-
-.scale:hover {
-  -webkit-transform: scale(1.03);
-          transform: scale(1.03);
-}
-
 .header_menu {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -551,14 +491,14 @@ footer {
 }
 
 .fa-heart {
-  margin: 1rem 1rem 0 0;
+  margin: 0.7rem 1rem 1rem 0;
 }
 
 .menu_block {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
-  margin: 8px 16px;
+  margin: 8px 0;
   width: 300px;
 }
 
@@ -591,6 +531,7 @@ footer {
   -webkit-animation: slide 0.5s ease 0s 1 normal forwards;
           animation: slide 0.5s ease 0s 1 normal forwards;
   margin-left: 20px;
+  height: auto;
 }
 
 .card_menu_text {
@@ -606,6 +547,7 @@ footer {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  font-size: 16px;
 }
 
 .card_menu_text_subtitle {
@@ -614,12 +556,12 @@ footer {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  font-size: 15px;
 }
 
 .card_menu_price {
   width: 3rem;
   min-height: 100%;
-  margin: 0 0rem 0 1rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -638,6 +580,7 @@ footer {
 
 .order_button {
   min-width: 100%;
+  margin: 30px 0;
 }
 
 .hidden {
@@ -684,24 +627,108 @@ footer {
 .menu_check {
   opacity: 0;
   width: 0;
+  height: 0;
   padding: 0;
   background-color: #fff;
+  margin-left: -20px;
   -webkit-animation: slide2 0.5s ease 1 normal forwards;
           animation: slide2 0.5s ease 1 normal forwards;
 }
 
 .first {
-  -webkit-animation: fade 2s ease-out;
-  animation: fade 2s ease-out;
+  -webkit-animation: fade 4s ease-out;
+  animation: fade 4s ease-out;
 }
 
 .second {
-  -webkit-animation: fade 5s ease-out;
-  animation: fade 3s ease-out;
+  -webkit-animation: fade 6s ease-out;
+  animation: fade 6s ease-out;
 }
 
 .third {
   -webkit-animation: fade 8s ease-out;
-  animation: fade 4s ease-out;
+  animation: fade 8s ease-out;
+}
+
+@media (min-width: 500px) {
+  .fonctionnement_titre,
+  .restaurants_titre {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+  }
+  .menu_block {
+    margin: 8px 16px;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .menu_block {
+    min-width: 30%;
+  }
+}
+
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #353535;
+  color: #fff;
+  padding: 20px 30px;
+}
+
+.footer_link {
+  color: #fff;
+}
+
+.footer__logo {
+  font-family: "Shrikhand";
+  color: #fff;
+  margin: 5px 50px 0 0;
+  font-size: 18px;
+  padding-bottom: 10px;
+  font-weight: initial;
+}
+
+.footer_box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.fa-utensils,
+.fa-hands-helping {
+  margin-right: 10px;
+}
+
+.footer_margin {
+  margin: 6px 0;
+}
+
+.footer_margin_left {
+  margin-left: 6px;
+}
+
+.scale:hover {
+  -webkit-transform: scale(1.03);
+          transform: scale(1.03);
+}
+
+.contact {
+  padding-bottom: 15px;
 }
 /*# sourceMappingURL=main.css.map */

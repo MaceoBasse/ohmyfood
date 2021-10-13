@@ -3,7 +3,7 @@ footer {
   flex-direction: column;
   background-color: $dark_gray;
   color: $white;
-  padding: 30px;
+  padding: 20px 30px;
 }
 .footer_link {
   color: $white;
@@ -12,7 +12,9 @@ footer {
   font-family: "Shrikhand";
   color: $white;
   margin: 5px 50px 0 0;
-  font-size: larger;
+  font-size: 18px;
+  padding-bottom: 10px;
+  font-weight: initial;
 }
 .footer_box {
   display: flex;
@@ -23,8 +25,14 @@ footer {
   margin-right: 10px;
 }
 .footer_margin {
-  margin: 7px 0;
+  margin: 6px 0;
 }
-.scale:hover{
+.footer_margin_left{
+  margin-left: 6px;
+}
+.scale:hover {
   transform: scale(1.03);
+}
+.contact{
+  padding-bottom: 15px;
 }

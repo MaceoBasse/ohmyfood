@@ -11,8 +11,8 @@ $primary_light: #f5edff;
 $light_gray: #f6f6f6;
 $gray: #eaeaea;
 $dark_gray: #353535;
-$green: #008000;
-$light_green: #90ee90;
+$green: #008766;
+$light_green: #90e2d0;
 
 body {
   margin: 0;
@@ -52,11 +52,12 @@ a {
 }
 .reservation {
   background-color: $light_gray;
-  padding-bottom: 40px;
+  padding-bottom: 50px;
 }
 .reservation_texte {
   @extend .center;
-  padding: 30px 80px 0 80px;
+  padding: 30px 70px 0 70px;
+  font-weight: 900;
   margin: 0;
 }
 .info_texte {
@@ -83,6 +84,7 @@ a {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  margin-bottom: 40px;
 }
 .card_fonctionnement {
   @extend .center;
@@ -90,9 +92,9 @@ a {
   height: 70px;
   background-color: $light_gray;
   width: 300px;
-  margin: 25px 10px;
+  margin: 0px 10px 20px 25px;
   border-radius: 20px;
-  box-shadow: 0px 4px 5px $shadow;
+  box-shadow: 0px 5px 5px $shadow;
 
   &:hover {
     background: $primary_light;
@@ -106,7 +108,7 @@ a {
 
 .fonctionnement_titre {
   font-weight: bolder;
-  margin-left: 25px;
+  margin: 40px auto 20px 25px;
 }
 .number {
   @extend .center;
@@ -120,19 +122,21 @@ a {
   left: -10px;
 }
 .restaurants_titre {
-  font-weight: bolder;
+  font-weight: 900;
+  margin-top: 30px;
 }
 #restaurants {
   background-color: $light_gray;
-  padding: 20px;
+  padding: 20px 20px 50px;
 }
 .restaurants_name {
-  font-weight: bold;
+  font-weight: 900;
 }
 .cards_restaurants {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+
 }
 .card_restaurants {
   border-radius: 15px;
@@ -140,8 +144,7 @@ a {
   width: 100%;
   max-width: 500px;
   box-shadow: 0px 4px 5px $shadow;
-  margin-bottom: 20px;
-  margin-right: 20px;
+  margin: 0 auto 20px;
   position: relative;
 
   &:hover {
@@ -178,12 +181,13 @@ img {
   height: 30px;
   width: 90px;
   position: absolute;
-  bottom: 200px;
-  right: 20px;
+  bottom: 205px;
+  right: 15px;
   border-radius: 5px;
 }
 .new_text {
   @extend .center;
   margin: 5px;
   color: $green;
+  font-weight: bold;
 }

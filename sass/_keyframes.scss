@@ -2,13 +2,7 @@
   0% {
     opacity: 0;
   }
-  100% {
-    opacity: 1;
-  }
-}
-
-@-moz-keyframes fade {
-  0% {
+  30% {
     opacity: 0;
   }
   100% {
@@ -20,12 +14,7 @@
   0% {
     opacity: 0;
   }
-  100% {
-    opacity: 1;
-  }
-}
-@-o-keyframes fade {
-  0% {
+  30% {
     opacity: 0;
   }
   100% {
@@ -48,26 +37,6 @@
   }
 }
 @-webkit-keyframes hidden {
-  0% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-    display: none;
-  }
-}
-
-@-moz-keyframes hidden {
-  0% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-    display: none;
-  }
-}
-
-@-o-keyframes hidden {
   0% {
     opacity: 1;
   }
